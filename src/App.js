@@ -19,7 +19,7 @@ function App() {
   const [isLogin, setIsLogin] = useState(false);
   const [currentLocation, setCurrentLocation] = useState(null);
 
-  const API_KEY = '25efac1701695de1e2f797408b4cc2a0';
+  const API_KEY = process.env.API_KEY_WEATHER;
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -160,7 +160,7 @@ function App() {
     if (currentLocation) {
       const cityString = `${currentLocation.name}, ${currentLocation.state || ''}, ${currentLocation.country}`;
       setCity(cityString);
-      
+
        fetchWeather();
      }
   };
