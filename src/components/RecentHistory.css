@@ -1,0 +1,118 @@
+.recent-history {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width : 35%;
+    border : 1px solid black ;
+    align-content: center;
+    padding:3px;
+    border-radius: 10px;
+
+    
+}
+ 
+
+.history-elements{
+    display : flex;
+    flex-direction : column;
+    height : 90%;
+    width : 100%;
+    align-content: center;
+    overflow-y: auto;
+    align-items: center;
+    text-align : center;
+}
+
+.history-element {
+    
+    border: 1px solid;
+    background-color: white;
+    min-height : 15%;
+    border : 1px solid black ;
+    min-width : 90%;
+    padding : 1px ;
+    margin : 1px ;
+    align-content: center;
+    align-items: center;
+    display : block;
+    border-width: 1px;
+
+}
+.history-element p{
+    margin: 0px;
+}
+
+.history-element:hover{
+    background-color: grey;
+    
+}
+
+.history-element .city{
+    font-size: 12px;
+    font-style : italic ;
+}
+
+.history-element .timestamp{
+   font-size : 8px ;
+   
+   font-style : italic ;
+   
+
+}
+
+@media (max-width : 380px){
+    .recent-history {
+        position: relative;
+        align-items: center;
+        text-align: center;
+        width : 35%;
+        border : 1px solid black;
+       margin-left  : 3px ;
+        align-content: center;
+        padding:3px;
+        border-radius: 10px;
+    
+        
+    }
+     
+    
+    .history-elements{
+        display : flex;
+        flex-direction : column;
+        height : 90%;
+        width : 100%;
+        align-content: center;
+        overflow-y: auto;
+        align-items: center;
+        text-align : center;
+    }
+    
+    .history-element {
+        
+        border: 1px solid;
+        background-color: white;
+        min-height : 15%;
+        border : 1px solid black ;
+        min-width : 90%;
+        padding : 1px ;
+        margin : 1px ;
+        align-content: center;
+        align-items: center;
+        display : block;
+        border-width: 1px;
+    
+    }
+ 
+    
+    .history-element .city{
+        font-size: 9px;
+        font-style : italic ;
+    }
+    
+    .history-element .timestamp{
+       font-size : 8px ;
+       font-style : italic ;
+       
+    
+    }
+}

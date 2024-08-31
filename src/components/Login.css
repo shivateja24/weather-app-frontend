@@ -1,0 +1,197 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    align-content : center;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    font-size: 10px;
+  }
+  
+  .navbar-left {
+    font-family: 'Courier New', Courier, monospace;
+    font-style : bold ;
+    font-weight : 400;
+    font-size : 15px ;
+     
+  }
+    
+  
+  .navbar-left h1 {
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+  }
+  
+  .navbar-right {
+    width: 60%;
+   }
+  .login-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 5px;
+    align-items: center;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    font-size: 8px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 30%;
+    margin-right: 5px;
+    margin-top : 5px ;
+  }
+  
+  .inn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1px;
+    align-items: center;
+  }
+  button {
+    background-color: white;
+    color : black ;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 15%;
+    height: 15%;
+    font-size: 8px;
+   }
+  
+  button:hover {
+     color: red;
+  }
+  
+  .login-section p {
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+  }
+
+ .login-section p:hover {
+  color: yellow;
+ }
+
+ .logout-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin : 2%;
+  align-items: center;
+  align-content: center;
+  }
+
+ .logout-section span{
+         font-size: 15px;
+         font-family: 'Courier New', Courier, monospace;
+          font-style : bold ;
+         margin : 2%;
+ }
+
+.logout-section button{
+      width : 20%;
+}
+
+
+@media (max-width : 380px)
+{
+  .navbar{
+    flex-direction: column;
+  }
+
+  .navbar-left {
+    font-size: 10px;
+  }
+  .navbar-right {
+    width: 100%;
+    align-items: left;
+    align-content : left ;
+   }
+
+  
+  .login-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 10px;
+    align-items: center;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    font-size: 8px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 30%;
+    margin-right: 5px;
+    margin-top : 5px ;
+  }
+  
+  .inn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1px;
+    align-items: center;
+  }
+  button {
+    background-color: white;
+    color : black ;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 15%;
+    height: 15%;
+    font-size: 8px;
+   }
+  
+ 
+  .login-section p {
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+  }
+
+ 
+ .logout-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin : 2%;
+  align-items: left;
+  align-content: left;
+  }
+
+ .logout-section span{
+         font-size: 12px;
+         font-family: 'Courier New', Courier, monospace;
+          font-style : bold ;
+         margin : 2%;
+ }
+
+ 
+}
