@@ -44,13 +44,25 @@ screenshots of application :
 
 Desktop :
 
+![image](https://github.com/user-attachments/assets/ecd07726-8942-4969-8296-a1c24fb03c17)
 
-image
 
-image
+![image](https://github.com/user-attachments/assets/96cd06d9-eec5-487f-9a6a-e5096e846704)
 
-image
 
-Mobile :
+![image](https://github.com/user-attachments/assets/df865c38-e6c9-4920-9b72-73618807416f)
 
-image
+
+
+
+Mobile : 
+
+![image](https://github.com/user-attachments/assets/529d3c51-34cb-43f1-8bbd-c616fecde8dc)
+
+
+Here is the deployed link for the application : 
+
+https://66d5de236f15570f8dd7e538--bespoke-buttercream-55dc79.netlify.app/
+
+Deployed using Netlify! .
+
