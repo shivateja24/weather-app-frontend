@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview : This Weather App provides real-time weather updates based on a user's search or current location. It is built with a React.js frontend, a Node.js backend, and a MongoDB database hosted in the cloud. The app offers a responsive interface and dynamic weather-related animations, with features like user authentication, recent search history, and accurate weather data fetched from an external API.
 
-## Available Scripts
+Features: Real-time weather updates based on user input or location User authentication (login, signup) and secure storage of user data Recent search history displayed for logged-in users Responsive design with animations for different weather conditions Backend RESTful API built with Node.js and Express.js
 
-In the project directory, you can run:
+Instructions to Set Up and Run the Project Locally Prerequisites: Node.js installed MongoDB Atlas account for database setup API key from a weather data provider (e.g., OpenWeatherMap)
 
-### `npm start`
+Steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+step-1 : Clone the repository: git clone https://github.com/shivateja24/weather-app-frontend.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+step-2 : Navigate to the project folder:
 
-### `npm test`
+step-3 : Set up the backend: git clone https://github.com/shivateja24/weather-app-backend.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+step-4 :Navigate to backend folder and Install dependencies: npm install step-5: Create a .env file in the backend folder with the following content: MONGO_URI=your_mongo_connection_string JWT_SECRET=your_secret_key
 
-### `npm run build`
+step-6: Run the backend server: npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+step-7 : Set up the frontend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to the frontend directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+step-8 : Install dependencies:
 
-### `npm run eject`
+npm install Create a .env file in the frontend folder with your API key: API_KEY_WEATHER
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+step-9 : Run the React app: npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Access the application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Frontend: Visit http://localhost:3000 Backend: The API will run at http://localhost:5000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+//Hope you got the application working!!
 
-## Learn More
+API endpoints : 
+POST - /login (body contains {username,password} ) 
+POST - /signup (body contains {username,password} ) 
+GET - /history (headers contains {Bearer <JWT_TOKEN>})
+PUT - /history (header {application/content, authorization (Bearer <JWT_TOKEN>)} body contains {city,timestamp}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+screenshots of application :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desktop :
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+image
 
-### Analyzing the Bundle Size
+image
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+image
 
-### Making a Progressive Web App
+Mobile :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+image
